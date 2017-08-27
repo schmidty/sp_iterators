@@ -3,22 +3,15 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
+use App\Salad;
 
 
 
 class StackTest extends TestCase
 {
-	public function testPushAndPop()
+	public function testCheckForMethod()
 	{
-		$stack = [];
-		$this->assertEquals( 0, count( $stack ) );
-
-		array_push( $stack, 'foo' );
-		$this->assertEquals( 'foo', $stack[ count( $stack )-1 ] );
-		$this->assertEquals( 1, count( $stack ) );
-
-		$this->assertEquals( 'foo', array_pop( $stack ) );
-		$this->assertEquals( 0, count( $stack ) );
+		$this->assertTrue( method_exists( new Salad( [ 'cucumber', 'lettuce' ] ), 'getIterator' ) );
 	}
 
 }

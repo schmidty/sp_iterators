@@ -16,4 +16,9 @@ class Salad implements \IteratorAggregate
 	{
 		return new \ArrayIterator( $this->ingredients );
 	}
+
+	public function getIngredients()
+	{
+		return $this->ingredients;
+	}
 }
