@@ -7,7 +7,7 @@ use App\Salad;
 
 
 
-class StackTest extends TestCase
+class SaladTest extends TestCase
 {
 	public function testCheckForMethod()
 	{
