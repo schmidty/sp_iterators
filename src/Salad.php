@@ -2,7 +2,7 @@
 namespace App;
 
 
-class Salad
+class Salad implements \IteratorAggregate
 {
 	protected $ingredients;
 
@@ -12,8 +12,8 @@ class Salad
 		$this->ingredients = $ingredients;
 	}
 
-	public function getIngredients()
+	public function getIterator()
 	{
-		return $this->ingredients;
+		return new \ArrayIterator( $this->ingredients );
 	}
 }
