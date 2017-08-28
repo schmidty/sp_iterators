@@ -1,0 +1,7 @@
+mysql:
+  dbname: <DATABASE_NAME>
+  dbhost: <DATABASE_HOST>
+  dbport: <DATABASE_PORT>
+  dbuser: <DATABASE_USER>
+  dbpass: <DATABASE_PASSWORD>
+
