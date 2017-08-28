@@ -24,4 +24,9 @@ class SaladClassTest extends TestCase
        $this->assertTrue( method_exists( $this->saladTest, 'getIterator' ) );
     }
 
+    public function testDbDoesExist()
+    {
+        $this->assertNotNull( $this->saladTest->getDb() );
+    }
+
 }
