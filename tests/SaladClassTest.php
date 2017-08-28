@@ -29,4 +29,9 @@ class SaladClassTest extends TestCase
         $this->assertNotNull( $this->saladTest->getDb() );
     }
 
+    public function testVerifyValuesInArray()
+    {
+        $this->assertTrue( in_array( 'cucumber', $this->saladTest->getIngredients() ) );
+        $this->assertTrue( in_array( 'lettuce', $this->saladTest->getIngredients() ) );
+    }
 }
